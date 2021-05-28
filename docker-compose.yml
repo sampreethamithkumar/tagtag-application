@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  frontend:
+    build: ./tagtag
+    ports:
+      - 3000:3000
+  backend:
+    build: ./image-upload-s3
+    ports:
+      - 3001:3001
